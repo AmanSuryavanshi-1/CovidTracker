@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Abyssinica+SIL&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Abyssinica SIL', serif;
+    overflow-x: hidden;
+    }
+    .h{
+        text-shadow: 7px 3px 5px rgb(19, 19, 19);
+        margin: 1em;
+        margin-bottom: .2em;
+        font-size: 2.5em;
+        text-align: center;
+        letter-spacing: 2px;
+    }
+
+    .table.table-hover{
+        box-shadow: 20px 20px 50px 15px grey;
+        border-radius: 5px;
+        margin: 2em;
+        width: 95%;
+        border-collapse: collapse;
+        background-color: rgb(100, 95, 95);
+        font-size: large;
+    }
+    .table.table-hover, td, th{
+        padding: 1em;
+        border-bottom: 1px solid #ddd;
+        text-align: left;
+        /* border-radius: 5px; */
+    }
+    /* rounded corners  */
+    .table.table-hover th:nth-child(1){
+        border-top-left-radius: 10px;
+    }
+    .table.table-hover th:nth-child(6){
+        border-top-right-radius: 10px;
+    }
+    .head{
+        text-transform: uppercase;
+        font-weight: bold;
+        color:white;
+        background: rgb(39, 37, 37);
+    }
+
+    .table tr td:hover:nth-child(4) {
+        background-color: rgb(231, 83, 115);
+        color: aliceblue;
+        border: 0.5px solid rgb(12, 12, 12);
+    }
+    
+    tr:nth-child(even) {background-color: #f2f2f2;}
+    
+    .table tr td:hover {
+        background-color: rgb(117, 223, 122);
+        color: aliceblue;
+        border: 0.5px solid rgb(12, 12, 12);
+    }
+
+    
+@media screen and (max-width: 850px) {
+    .table.table-hover{
+
+     margin: 1.5em;
+     max-width: fit-content; 
+     background-color: rgb(100, 95, 95);
+     font-size: large;
+    }
+    .h{
+        margin: .5em;
+        margin-bottom: 0;
+        font-size: 1.5em;
+        letter-spacing: 1px;
+      }
+  }
+  
+   @media screen and (max-width: 700px) {
+    
+    .table.table-hover{
+
+        margin: 1em;
+        max-width: fit-content; 
+        background-color: rgb(100, 95, 95);
+        font-size: large;
+        display:inline-table; 
+       }
+
+       .table.table-hover, td, th{
+        padding: 0;
+        border-bottom: 1px solid #ddd;
+        text-align: left;
+    }
+       .h{
+           margin: .3em;
+           font-size: 1em;
+           letter-spacing: 1px;
+         }
+         .head{
+            text-transform: uppercase;
+            font: weight 0;
+            font-size: small;
+            color:white;
+        }
+     }
